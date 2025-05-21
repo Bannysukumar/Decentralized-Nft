@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Minting DApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <h1>NFT Minting DApp</h1>
+            </div>
+            <div class="wallet-section">
+                <button id="connectWallet" class="btn wallet-btn">
+                    <i class="fas fa-wallet"></i>
+                    <span>Connect Wallet</span>
+                </button>
+                <div id="walletInfo" class="hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Connected: <span id="walletAddress"></span></p>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="hero-section">
+                <h2>Create Your Unique NFT</h2>
+                <p>Upload your image and mint it as an NFT on the blockchain</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="upload-section">
+                    <div class="section-header">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h2>Upload Your Image</h2>
+                    </div>
+                    <div class="upload-container">
+                        <input type="file" id="imageUpload" accept="image/*" class="hidden">
+                        <label for="imageUpload" class="upload-btn">
+                            <i class="fas fa-image"></i>
+                            <span>Choose Image</span>
+                            <small>Max size: 4MB</small>
+                        </label>
+                        <div id="imagePreview" class="image-preview hidden">
+                            <img id="preview" src="" alt="Preview">
+                            <button class="remove-image" onclick="removeImage()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mint-section">
+                    <div class="section-header">
+                        <i class="fas fa-coins"></i>
+                        <h2>Mint Your NFT</h2>
+                    </div>
+                    <button id="mintNFT" class="btn mint-btn" disabled>
+                        <i class="fas fa-magic"></i>
+                        <span>Mint NFT</span>
+                    </button>
+                    <div id="mintStatus" class="status hidden">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Processing...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft-gallery">
+                <div class="section-header">
+                    <i class="fas fa-images"></i>
+                    <h2>Your NFT Collection</h2>
+                </div>
+                <div id="nftList" class="nft-grid"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 NFT Minting DApp. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
