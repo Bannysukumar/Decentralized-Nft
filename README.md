@@ -1,41 +1,61 @@
-<!-- readme-seo: bannysukumar -->
+# NFT Minting DApp
 
-# Decentralized NFT
+NFT Minting DApp ships NFT.sol alongside index.html. The HTML document title is "NFT Minting DApp".
 
-**Decentralized NFT** is an open-source NFT minting and marketplace app. The code is written mainly in JavaScript and maintained by [Banny Sukumar](https://github.com/Bannysukumar), a blockchain and full-stack developer.
+[![License](https://img.shields.io/github/license/Bannysukumar/Decentralized-Nft)](https://github.com/Bannysukumar/Decentralized-Nft/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/Decentralized-Nft)](https://github.com/Bannysukumar/Decentralized-Nft/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/Decentralized-Nft)](https://github.com/Bannysukumar/Decentralized-Nft/commits/main)
 
-This repository is public so developers can read the source, reuse it under the MIT License, and send improvements.
+## Overview
 
-## About this project
+NFT Minting DApp ships NFT.sol alongside index.html. The HTML document title is "NFT Minting DApp".
 
-Decentralized NFT lives at [`github.com/Bannysukumar/Decentralized-Nft`](https://github.com/Bannysukumar/Decentralized-Nft). Use it as a starting point for a NFT minting and marketplace app, or study how the JavaScript parts fit together.
 
-## Tech stack
+What is actually in the repository: `contract/NFT.sol`, `contract/`. GitHub reports the primary language as JavaScript.
 
-- Primary language: **JavaScript**
-- License: **MIT**
-- Maintainer: [Banny Sukumar](https://github.com/Bannysukumar)
+## Features
 
-## Getting started
+
+- NFT contract with mintNFT, _setTokenURI, tokenURI
+
+## Tech Stack
+
+| Technology | Where it shows up |
+|---|---|
+| Solidity | Smart contracts |
+| OpenZeppelin | Smart-contract base contracts |
+
+## Project Architecture
+
+Browser page → Solidity contract. The frontend loads ethers or web3.
+
+## Project Structure
+
+```text
+Decentralized-Nft/
+├── contract/
+├── app.js
+├── index.html
+├── style.css
+```
+
+## Getting Started
 
 ```bash
 git clone https://github.com/Bannysukumar/Decentralized-Nft.git
 cd Decentralized-Nft
 ```
 
-Open the project in your editor. Install dependencies only if this repo already includes a manifest such as `package.json`, `requirements.txt`, or a `.csproj` file.
-
 ## Contributing
 
-Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before you open a pull request.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Banny Sukumar.
+Licensed under MIT. See [LICENSE](LICENSE).
 
 ## Author
+
+[Banny Sukumar](https://github.com/Bannysukumar)
 
 - GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
 - Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
 - LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
-- ORCID: [0009-0007-9766-6579](https://orcid.org/0009-0007-9766-6579)
